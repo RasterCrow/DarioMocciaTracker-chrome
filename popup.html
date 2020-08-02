@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+    rel="stylesheet"
+  />
+  <head>
+    <style>
+      body {
+        width: 250px;
+        height:330px;
+        scroll-behavior: smooth;
+        background-color: rgba(53, 149, 238, 1);
+
+        font-size: medium;
+        text-align: center;
+        font-family: "Mulish", sans-serif;
+      }
+      .titoloPrincipale {
+        text-shadow: 2px 2px rgb(235, 99, 99);
+        margin-top: 50px;
+        color:white;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+      .titolo {
+        text-shadow: 2px 2px rgb(235, 99, 99);
+        color:white;
+        margin-top: 35px;
+        text-align: center;
+      }
+      .recapVolte{
+        margin-top: 35px;
+        margin-left:5px;
+        margin-right:5px;
+        text-align: center;
+        color:white;
+        text-shadow: 2px 2px rgb(2, 1, 1);
+      }
+      .ep{
+        color:black;
+        
+      }
+      .ep b{
+        color:white;
+        text-shadow: 2px 2px rgb(11, 19, 22);
+      }
+      .listaEpisodi {
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 80px;
+      }
+      #half1LIT{
+        float:left
+      }
+      #half2LIT{
+        float:right
+      }
+      .hidden {
+        visibility: hidden;
+      }
+
+      .serie{
+        position: absolute;
+        margin-top: 15px;
+        z-index: -1;
+      }
+      #nextSeries{
+        margin-top: 45px;
+        float:right;
+        z-index: 1;
+      }
+      #previousSeries{
+        margin-top: 45px;
+        float:left;
+        z-index: 1;
+      }
+      #buttonsUtilities{
+        display: inline;
+        z-index: 1;}
+      .dot {
+        position: fixed;
+        top: -53%;
+        right: -7%;
+        height: 300px;
+        width: 300px;
+        box-shadow: 0px 0px 20px 3px #2c2b2b;
+
+        background-image: url(/images/sfondo.webp);
+        background-size: contain;
+
+        background-position-y: 180px;
+        z-index: -5;
+        border-radius: 20%;
+        display: inline-block;
+      }
+      #deleteProgressNatale{
+        z-index: 1 ;
+      }
+      button * {
+        width: 30px;
+      }
+      button {
+        
+        color: #fff !important;
+        text-decoration: none;
+        background: transparent;
+        border-radius: 50px;
+        border: none;
+        transition: all 0.4s ease 0s;
+      }
+      button:hover {
+        text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 1);
+        transition: all 0.4s ease 0s;
+      }
+      button:active,
+      button:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="dot"></span>
+    <div class="divTitolo">
+      <h2 class="titoloPrincipale">Tracker degli episodi</h2>
+    </div>
+    <button
+    title="Serie successiva"
+    id="nextSeries"
+    value="0"
+  >
+      <img src="/images/arrow_right.svg" />
+    </a>
+  </button>
+  <button
+    title="Serie precedente"
+    id="previousSeries"
+    value="0"
+  >
+      <img src="/images/arrow_left.svg" />
+    </a>
+  </button>
+    <!-- NATALE A TOKYO -->
+    <div id="NT" class="serie">
+      <h3 class="titolo">Natale a Tokyo</h3>
+      <div class="listaEpisodi">
+        
+        <div class="ep">Episodio 1 : <b id="ep1NT"></b></div>
+
+        <div class="ep">Episodio 2 : <b id="ep2NT"></b></div>
+
+        <div class="ep">Episodio 3 : <b id="ep3NT"></b></div>
+
+        <div class="ep">Episodio 4 : <b id="ep4NT"></b></div>
+      </div>
+      <p class="recapVolte">
+        Dhe hai fatto <b id="nataleNTVolte"></b> rewatch completi della loro prima avventura.
+      </p>
+      
+
+      
+    </div>
+    <!-- NATALE A NEW YORK-->
+    <div id="NY" class="serie" >
+      <h3 class="titolo">Natale a New York</h3>
+      <div class="listaEpisodi">
+        
+        <div class="ep">Episodio 1 : <b id="ep1NY"></b></div>
+
+        <div class="ep">Episodio 2 : <b id="ep2NY"></b></div>
+      </div>
+      <p class="recapVolte">
+        Boia, hai fatto compagnia a Giovanni Maria per ben <b id="nataleNYVolte"></b> volte.
+      </p>
+      
+
+      
+    </div>
+    <!-- LOST IN TOKYO-->
+    <div id="LIT" class="serie">
+      <h3 class="titolo">Lost in Tokyo</h3>
+      <div class="listaEpisodi">
+        
+        <div id="half1LIT">
+        <div class="ep">Episodio 1 : <b id="ep1LIT"></b></div>
+
+        <div class="ep">Episodio 2 : <b id="ep2LIT"></b></div>
+
+        <div class="ep">Episodio 3 : <b id="ep3LIT"></b></div>
+        <div class="ep">Episodio 4 : <b id="ep4LIT"></b></div>
+
+        <div class="ep">Episodio 5 : <b id="ep5LIT"></b></div>
+      </div>
+      <div id="half2LIT">
+        <div class="ep">Episodio 6 : <b id="ep6LIT"></b></div>
+        <div class="ep">Episodio 7 : <b id="ep7LIT"></b></div>
+
+        <div class="ep">Episodio 8 : <b id="ep8LIT"></b></div>
+
+        <div class="ep">Episodio 9 : <b id="ep9LIT"></b></div>
+        <div class="ep">Episodio 10 : <b id="ep10LIT"></b></div>
+      </div>
+      </div>
+      <p class="recapVolte">
+        Hai aiutato Dario a radersi i capelli per ben <b id="lostInTokyoVolte"></b> volte, Non Male!.
+      </p>
+      
+      
+    </div>
+    <div id="buttonsUtilities">
+      <button
+        title="Ricomincia la tua avventura col Tridente d'acciaio da 0."
+        id="deleteProgress"
+      >
+        <img src="/images/trash.svg" />
+      </button>
+      <button
+        title="Monitor andr&agrave; a cercare quante volte hai gia visto la serie in passato. "
+        id="findData"
+      >
+        <img src="/images/search.svg" />
+      </button>
+      <button
+    title="Modifica le impostazioni dell'estensione"
+    id="settingsPage"
+  >
+  <a href="chrome-extension://higkhpdnbbfcacffiijgkhnbljmhkjjd/options.html"> 
+      <img src="/images/settings.svg" />
+    </a>
+  </button>
+    </div>
+    
+    <script src="popup.js"></script>
+  </body>
+</html>

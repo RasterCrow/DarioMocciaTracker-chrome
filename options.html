@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+    rel="stylesheet"
+  />
+  <head>
+    <style>
+      html {
+        background-image: url("./images/sfondo_opzioni.jpg");
+        background-size: cover;
+        background-position-x: -100px;
+      }
+      body{
+        text-align: center;
+        font-family: "Mulish", sans-serif;
+        font-size: medium;
+        
+      }
+      button {
+        outline: none;
+        margin: 10px;
+      }
+      #windowFrame {
+        background-color: rgba(255, 255, 255,0.5);
+        margin-top: 50px;
+        width:700px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+        border-radius: 7%;
+        padding: 20px;
+        padding-bottom: 40px;
+        box-shadow: 0px 10px 20px 3px #2c2b2b;
+        margin-bottom:40px;
+      }
+      #windowFrame2 {
+        
+        display: inline-block;
+      }
+      #titoloPagina{
+        margin-top: 50px;
+      }
+      #half1LIT{
+        margin-left: 30px;
+        float:left
+      }
+      #half2LIT{
+        float:right
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1 id="titoloPagina">Dario Moccia- Tracker</h1>
+    <div id="windowFrame">
+      <div id="windowFrame2">
+      <h1>Pagina delle impostazioni</h1>
+      <p>
+        Qui puoi cambiare manualmente il numero di episodi visti.
+      </p>
+      <hr />
+      <div class ="serie">
+        <p>
+          <h2>Natale a Tokyo</h2>
+        </p>
+        <div class="ep">Episodio 1 : <b id="ep1NT"></b></div>
+        <input type="number" id="textEp1NT" min="0" max="1000" value="0" />
+        <button id="setEpisode1NT" value="ep1NT">
+          Imposta
+        </button>
+        <div class="ep">Episodio 2 : <b id="ep2NT"></b></div>
+        <input type="number" id="textEp2NT" min="0" max="1000" value="0" />
+        <button id="setEpisode2NT" value="ep2NT">
+          Imposta
+        </button>
+        <div class="ep">Episodio 3 : <b id="ep3NT"></b></div>
+        <input type="number" id="textEp3NT" min="0" max="1000" value="0" />
+        <button id="setEpisode3NT" value="ep3NT">
+          Imposta
+        </button>
+        <div class="ep">Episodio 4 : <b id="ep4NT"></b></div>
+        <input type="number" id="textEp4NT" min="0" max="1000" value="0" />
+        <button id="setEpisode4NT" value="ep4NT">
+          Imposta
+        </button>
+      </div>
+      <div class ="serie">
+        <p>
+          <h2>Natale a New York</h2>
+        </p>
+        <div class="ep">Episodio 1 : <b id="ep1NY"></b></div>
+        <input type="number" id="textEp1NY" min="0" max="1000" value="0" />
+        <button id="setEpisode1NY" value="ep1NY">
+          Imposta
+        </button>
+        <div class="ep">Episodio 2 : <b id="ep2NY"></b></div>
+        <input type="number" id="textEp2NY" min="0" max="1000" value="0" />
+        <button id="setEpisode2NY" value="ep2NY">
+          Imposta
+        </button>
+        
+      </div>
+      <div class ="serie">
+        <p>
+          <h2>Lost in Tokyo</h2>
+        </p>
+        <div id="half1LIT">
+          <div class="ep">Episodio 1 : <b id="ep1LIT"></b></div>
+          <input type="number" id="textEp1LIT" min="0" max="1000" value="0" />
+          <button id="setEpisode1LIT" value="ep1LIT">
+            Imposta
+          </button><div class="ep">Episodio 2 : <b id="ep2LIT"></b></div>
+          <input type="number" id="textEp2LIT" min="0" max="1000" value="0" />
+          <button id="setEpisode2LIT" value="ep2LIT">
+            Imposta
+          </button><div class="ep">Episodio 3 : <b id="ep3LIT"></b></div>
+          <input type="number" id="textEp3LIT" min="0" max="1000" value="0" />
+          <button id="setEpisode3LIT" value="ep3LIT">
+            Imposta
+          </button><div class="ep">Episodio 4 : <b id="ep4LIT"></b></div>
+          <input type="number" id="textEp4LIT" min="0" max="1000" value="0" />
+          <button id="setEpisode4LIT" value="ep4LIT">
+            Imposta
+          </button><div class="ep">Episodio 5 : <b id="ep5LIT"></b></div>
+          <input type="number" id="textEp5LIT" min="0" max="1000" value="0" />
+          <button id="setEpisode5LIT" value="ep5LIT">
+            Imposta
+          </button>
+        </div>
+          <div class="ep">Episodio 6 : <b id="ep6LIT"></b></div>
+          <input type="number" id="textEp6LIT" min="0" max="1000" value="0" />
+          <button id="setEpisode6LIT" value="ep6LIT">
+            Imposta
+          </button><div class="ep">Episodio 7 : <b id="ep7LIT"></b></div>
+          <input type="number" id="textEp7LIT" min="0" max="1000" value="0" />
+          <button id="setEpisode7LIT" value="ep7LIT">
+            Imposta
+          </button><div class="ep">Episodio 8 : <b id="ep8LIT"></b></div>
+          <input type="number" id="textEp8LIT" min="0" max="1000" value="0" />
+          <button id="setEpisode8LIT" value="ep8LIT">
+            Imposta
+          </button><div class="ep">Episodio 9 : <b id="ep9LIT"></b></div>
+          <input type="number" id="textEp9LIT" min="0" max="1000" value="0" />
+          <button id="setEpisode9LIT" value="ep9LIT">
+            Imposta
+          </button><div class="ep">Episodio 10 : <b id="ep10LIT"></b></div>
+          <input type="number" id="textEp10LIT" min="0" max="1000" value="0" />
+          <button id="setEpisode10LIT" value="ep10LIT">
+            Imposta
+          </button>
+        <div id="half2LIT">
+
+
+        </div>
+        
+        
+      </div>
+      <br>
+      <hr />
+      <h1>Integrazione con Youtube</h1>
+      <p>
+        Qui puoi importare la cronologia direttamente da Youtube.
+      </p>
+      <p><i>In arrivo...</i></p>
+    </div>
+  </body>
+  <script src="options.js"></script>
+</html>
