@@ -279,8 +279,8 @@ deleteProgress.onclick = function (element) {
 
         } else if (data.loadedTable == "LIT") {
             //elimino LIT
-            //elimino NY
-            chrome.storage.sync.set({ ep1LIT: 0, ep1LIT: 0, ep3LIT: 0, ep4LIT: 0, ep5LIT: 0, ep6LIT: 0, ep7LIT: 0, ep8LIT: 0, ep9LIT: 0, ep10LIT: 0, rewatchCompletatiLIT: 0 }, function () {
+
+            chrome.storage.sync.set({ ep1LIT: 0, ep2LIT: 0, ep3LIT: 0, ep4LIT: 0, ep5LIT: 0, ep6LIT: 0, ep7LIT: 0, ep8LIT: 0, ep9LIT: 0, ep10LIT: 0, rewatchCompletatiLIT: 0 }, function () {
                 //after removing data updates popup values
                 chrome.storage.sync.get("ep1LIT", function (data) {
                     let ep = document.getElementById("ep1LIT");

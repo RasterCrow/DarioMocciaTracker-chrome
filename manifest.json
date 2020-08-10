@@ -1,7 +1,7 @@
 {
     "name": "Dario Moccia - Tracker Episodi",
     "version": "1.0",
-    "description": "Estensione che tiene conto di quante volte hai guardato su youtube le serie di Dario Moccia di Natale a Tokyo, Lost in Tokyo e Natale a New York!",
+    "description": "Tieni conto in automatico di quante volte hai guardato su youtube le serie di Dario Moccia di Natale a Tokyo, Lost in Tokyo e Natale a New York!",
     "options_page": "options.html",
     "permissions": [
         "storage",
