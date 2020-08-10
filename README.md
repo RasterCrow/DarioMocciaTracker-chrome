@@ -9,7 +9,7 @@ Codice sorgente dell'estensione per Google Chrome / Microsoft Edge ( versione Ch
 
 # Come funziona
 Quando un utente visualizza un video della serie, viene aggiornato un contatore nell'estensione.
-Per il momento funziona solo se gli episodi vengono guardati direttamente nel browser, quindi se le serie vengono guardate dall'app di Youtube il conteggio non si aggiorna.
+Per il momento funziona solo se gli episodi vengono guardati direttamente nel browser, quindi se le serie vengono guardate dall'app su smartphone di Youtube il conteggio non si aggiorna.
 E' comunque possibile aggiornare manualmente la quantità di volte che sono stati visti gli episodi.
 
 # Privacy
